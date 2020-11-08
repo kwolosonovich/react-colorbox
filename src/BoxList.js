@@ -1,17 +1,19 @@
 import { defaultCipherList } from 'constants';
 import { uniqueId } from 'lodash';
-import React from 'react';
+import React, {useState} from 'react';
 import {v4 as uuid} from "uuid";
+import Box from './Box'
 
 const BoxList = () => {
     // initial state
     const INITIAL_STATE = {
+      id: 1,  
       height: "10px",
       width: "20px",
       bgColor: "blue",
     };
 
-    const [boxes, setBoxes] = userState([INITIAL_STATE]);
+    const [boxes, setBoxes] = useState([INITIAL_STATE]);
 
     // update state
     const addBox = (newBox) => {
@@ -22,7 +24,7 @@ const BoxList = () => {
       <div>
         <h3>Boxes</h3>
         <div>
-          {boxes.map(({ height, width, bgColor }) => (
+          {boxes.map(({ id, height, width, bgColor }) => (
             <Box
               id={id}
               key={id}

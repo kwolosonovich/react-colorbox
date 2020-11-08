@@ -18,12 +18,13 @@ const BoxList = () => {
 
     // update state
     const addBox = (newBox) => {
-        setBoxes(boxes => [...boxes, {...newBox, id:uniqueId()}])
+        setBoxes(boxes => [...boxes, {...newBox, id:uniqueId() }])
     }
 
     return (
       <div>
         <h3>Boxes</h3>
+        <NewBoxForm addBox={addBox}/>
         <div>
           {boxes.map(({ id, height, width, bgColor }) => (
             <Box

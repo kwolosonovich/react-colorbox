@@ -8,7 +8,7 @@ const NewBoxForm = ({addBox}) => {
     bgColor: ""
   };
   // set state
-  const [formData, setFormData] = useState(INITIAL_STATE);
+  const [formData, setFormData] = useState([INITIAL_STATE]);
 
   const handleChange = (e) => {
     const { name, value } = e.target;

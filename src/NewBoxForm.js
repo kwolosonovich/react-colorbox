@@ -27,45 +27,47 @@ const NewBoxForm = ({addBox}) => {
 
   return (
     <div>
-    <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit}>
 
-        <div>
-          <label htmlFor="height">Height:</label>
-          <input
-          id="height"
-          type="text"
-          name="height"
-          placeholder="0"
-          value={formData.height}
-          onChange={handleChange}
-          />
-        </div>
+          <div>
+            <label htmlFor="height">Height:</label>
+            <input
+            id="height"
+            type="text"
+            name="height"
+            placeholder="0"
+            value={formData.height}
+            onChange={handleChange}
+            />
+          </div>
 
-        <div>
-          <label htmlFor="width">Width:</label>
-          <input
-          id="width"
-          type="text"
-          name="width"
-          placeholder="0"
-          value={formData.width}
-          onChange={handleChange}
-          />
-        </div>
+          <div>
+            <label htmlFor="width">Width:</label>
+            <input
+            id="width"
+            type="text"
+            name="width"
+            placeholder="0"
+            value={formData.width}
+            onChange={handleChange}
+            />
+          </div>
 
-        <div>
-          <label htmlFor="bgColor">Color:</label>
-          <input
-          id="bgColor"
-          type="text"
-          name="bgColor"
-          placeholder="Add"
-          value={formData.bgColor}
-          onChange={handleChange}
-          />
-        </div>
-
-    </form>
+          <div>
+            <label htmlFor="bgColor">Color:</label>
+            <input
+            id="bgColor"
+            type="text"
+            name="bgColor"
+            placeholder="Add"
+            value={formData.bgColor}
+            onChange={handleChange}
+            />
+          </div>
+          
+      <button id="create">Create</button>
+      
+      </form>
     </div>
   );
 };

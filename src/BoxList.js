@@ -6,14 +6,14 @@ import Box from './Box'
 
 const BoxList = () => {
     // initial state
-    const INITIAL_STATE = {
+    const INITIAL_STATE = [{
       id: 1,  
       height: "10px",
       width: "20px",
       bgColor: "blue",
-    };
+    }];
 
-    const [boxes, setBoxes] = useState([INITIAL_STATE]);
+    const [boxes, setBoxes] = useState(INITIAL_STATE);
 
     // update state
     const addBox = (newBox) => {

@@ -65,8 +65,7 @@ const NewBoxForm = ({addBox}) => {
             />
           </div>
           
-      <button id="create">Create</button>
-      
+      <button id="create">Create</button>   
       </form>
     </div>
   );

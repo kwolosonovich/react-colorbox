@@ -6,12 +6,7 @@ import './BoxList.css'
 
 const BoxList = () => {
     // initial state
-    const INITIAL_STATE = [{
-      id: 1,  
-      height: "10px",
-      width: "20px",
-      bgColor: "blue",
-    }];
+    const INITIAL_STATE = [];
 
     const [boxes, setBoxes] = useState(INITIAL_STATE);
 
@@ -27,7 +22,6 @@ const BoxList = () => {
 
     return (
       <div>
-        <h3>Boxes</h3>
         <NewBoxForm addBox={addBox} />
         <div>
           {boxes.map(({ id, height, width, bgColor }) => (

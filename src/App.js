@@ -6,7 +6,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        Color Box
+        <h1>Color Box</h1>
       </header>
       <BoxList />
     </div>
